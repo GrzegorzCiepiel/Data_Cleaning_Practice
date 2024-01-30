@@ -31,7 +31,7 @@ us_census['Men'] = pd.to_numeric(us_census['Men'])
 us_census['Women'] = pd.to_numeric(us_census['Women'])
 #us_census['Women'] = us_census.Women.astype("int64") - tried as an alternative but it doses not work
 
-plt.scatter(us_census['Women'], us_census['Income'])
+plt.scatter(us_census['Women'], us_census['Income'], s=25, color="purple")
 plt.title('Woman income spread')
 plt.xlabel('Woman in million')
 plt.ylabel('Income amount')
@@ -60,7 +60,7 @@ census = census.fillna(
 print(census)
 
 for race in ['Hispanic', 'White', 'Black', 'Native', 'Asian', 'Pacific']:
-    plt.hist(census[race], bins=51)
+    plt.hist(census[race], color='green')
     plt.xlabel("Percentage")
     plt.ylabel("Frequency")
     plt.title("Histogram of the Percentage of {} People per State".format(race))
