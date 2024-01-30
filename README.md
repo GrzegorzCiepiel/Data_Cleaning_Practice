@@ -47,7 +47,7 @@ Then I plot histograms showing percentage share of every population in states.
 ![hist_Black ](https://github.com/GrzegorzCiepiel/Data_Cleaning_Practice/assets/135313652/b80f3677-d550-4e7a-828b-2e3fd05384dd)
 ![hist_Asian ](https://github.com/GrzegorzCiepiel/Data_Cleaning_Practice/assets/135313652/dbc01680-07d1-4b21-b63d-41edfdc9ba82)
 
-
+I used also pandas melt method to agregate all races in one column.
 
 
 
