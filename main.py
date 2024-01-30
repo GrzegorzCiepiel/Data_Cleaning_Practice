@@ -12,6 +12,8 @@ for file in files:
 us_census = pd.concat(list)
 print(us_census.head())
 print(us_census.dtypes)
+print(us_census.describe())
+print(us_census.info())
 
 # INCOME
 #us_census.Income = us_census.Income.str.replace('[\$]', '', regex=True)
