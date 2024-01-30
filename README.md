@@ -29,6 +29,7 @@ In GenderPop column I split values in two - one having information about women p
 Then I fillup empty values in new "Women" column subtracting Men population form Total population.
 
 Then I was able to plot "Woman income spread"
+
 ![Women_income_spread](https://github.com/GrzegorzCiepiel/Data_Cleaning_Practice/assets/135313652/a575f509-8a28-42e2-9de5-db87c361e048)
 
 
