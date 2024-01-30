@@ -15,3 +15,18 @@ The data is spread into four separate files. First task is to concate it using g
       data = pd.read_csv(file)
       list.append(data)
     us_census = pd.concat(list)
+
+
+Next I had to do preliminary analysis using pandas methods:
++ head()
++ describe()
++ columns()
++ dtypes()
++ info()
+
+I removed '$' sign from values in Income column and changed their dtype to float64 ( numeric )
+In GenderPop column I split values in two - one having information about women population and one about men population.
+Then I fillup empty values in new "Women" column subtracting Men population form Total population.
+
+Then I was able to plot "Woman income spread"
+![Women_income_spread](https://github.com/GrzegorzCiepiel/Data_Cleaning_Practice/assets/135313652/a575f509-8a28-42e2-9de5-db87c361e048)
