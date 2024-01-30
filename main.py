@@ -60,10 +60,12 @@ census = census.fillna(
 print(census)
 
 for race in ['Hispanic', 'White', 'Black', 'Native', 'Asian', 'Pacific']:
+    plt.figure()
     plt.hist(census[race], color='green')
     plt.xlabel("Percentage")
     plt.ylabel("Frequency")
     plt.title("Histogram of the Percentage of {} People per State".format(race))
+    plt.savefig(f'hist_{race} .png')
     plt.show()
     plt.clf()
 
